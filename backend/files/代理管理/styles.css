@@ -1374,8 +1374,8 @@
   position:absolute;
   left:0px;
   top:0px;
-  width:500px;
-  height:122px;
+  width:658px;
+  height:138px;
   background:inherit;
   background-color:rgba(255, 255, 255, 0);
   border-radius:0px;
@@ -1387,8 +1387,8 @@
   position:absolute;
   left:215px;
   top:311px;
-  width:500px;
-  height:122px;
+  width:658px;
+  height:138px;
   display:flex;
   transition:none;
   transform-origin:50% 50%;
@@ -1402,7 +1402,7 @@
 }
 #u6573_text {
   border-width:0px;
-  white-space:nowrap;
+  word-wrap:break-word;
   text-transform:none;
 }
 #u6574_div {
