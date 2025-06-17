@@ -22,6 +22,9 @@
 }
 .button {
 }
+.primary_button {
+  color:#FFFFFF;
+}
 ._一级标题 {
   font-family:"Arial Normal", "Arial", sans-serif;
   font-weight:bold;
@@ -89,7 +92,11 @@
   color:#000000;
   text-align:left;
 }
-.primary_button {
+.list_box {
+  color:#000000;
+  text-align:left;
+}
+.primary_button1 {
   color:#FFFFFF;
 }
 .link_button {
