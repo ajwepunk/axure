@@ -1,0 +1,945 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>防刷功能</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/防刷功能/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-3.7.1.min.js"></script>
+    <script src="resources/scripts/axure/axQuery.js"></script>
+    <script src="resources/scripts/axure/globals.js"></script>
+    <script src="resources/scripts/axutils.js"></script>
+    <script src="resources/scripts/axure/annotation.js"></script>
+    <script src="resources/scripts/axure/axQuery.std.js"></script>
+    <script src="resources/scripts/axure/doc.js"></script>
+    <script src="resources/scripts/messagecenter.js"></script>
+    <script src="resources/scripts/axure/events.js"></script>
+    <script src="resources/scripts/axure/recording.js"></script>
+    <script src="resources/scripts/axure/action.js"></script>
+    <script src="resources/scripts/axure/expr.js"></script>
+    <script src="resources/scripts/axure/geometry.js"></script>
+    <script src="resources/scripts/axure/flyout.js"></script>
+    <script src="resources/scripts/axure/model.js"></script>
+    <script src="resources/scripts/axure/repeater.js"></script>
+    <script src="resources/scripts/axure/sto.js"></script>
+    <script src="resources/scripts/axure/utils.temp.js"></script>
+    <script src="resources/scripts/axure/variables.js"></script>
+    <script src="resources/scripts/axure/drag.js"></script>
+    <script src="resources/scripts/axure/move.js"></script>
+    <script src="resources/scripts/axure/visibility.js"></script>
+    <script src="resources/scripts/axure/style.js"></script>
+    <script src="resources/scripts/axure/adaptive.js"></script>
+    <script src="resources/scripts/axure/tree.js"></script>
+    <script src="resources/scripts/axure/init.temp.js"></script>
+    <script src="resources/scripts/axure/legacy.js"></script>
+    <script src="resources/scripts/axure/viewer.js"></script>
+    <script src="resources/scripts/axure/math.js"></script>
+    <script src="resources/scripts/axure/jquery.nicescroll.min.js"></script>
+    <script src="data/document.js"></script>
+    <script src="files/防刷功能/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5030" class="ax_default _文本段落 transition notrs">
+        <div id="u5030_div" class=""></div>
+        <div id="u5030_text" class="text ">
+          <p><span>規則説明</span></p><p><span>1. 擊中條件：有效底池10BB(6+為10Ante)且參與翻牌；</span></p><p><span>2.有效參與度不明顯低於所有玩家的平均水平；</span></p><p><span>3. 當有效底池達到10BB時收取服务费进入獎池；</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5031" class="ax_default _三级标题 transition notrs">
+        <div id="u5031_div" class=""></div>
+        <div id="u5031_text" class="text ">
+          <p><span>中奖条件文字</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5032" class="ax_default _文本段落 transition notrs">
+        <div id="u5032_div" class=""></div>
+        <div id="u5032_text" class="text ">
+          <p><span>1.玩家击中luckycard 5次和10次发放奖金时判断玩家在本轮luckycard周期内本级别的单手服务费贡献BB数是否达到设置的数值（默认设置为0.1）；</span></p><p><span>2.若判断为不符合条件，则不发放奖金并产生不发放的记录数据</span></p><p><span>3.若在后续手牌结束后达到服务费贡献条件且在本周期内有不发放的记录数据，则系统按照达到条件时候补发奖金；</span></p><p><span>4.后台展示所有不发放记录数据，系统未补发的可以人工操作审核；</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5033" class="ax_default _二级标题 transition notrs">
+        <div id="u5033_div" class=""></div>
+        <div id="u5033_text" class="text ">
+          <p><span>功能逻辑</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5034" class="ax_default _二级标题 transition notrs">
+        <div id="u5034_div" class=""></div>
+        <div id="u5034_text" class="text ">
+          <p><span>APP显示</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u5035" class="ax_default _图像_ transition notrs">
+        <img id="u5035_img" class="img " src="images/防刷功能/u5035.png"/>
+        <div id="u5035_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5036" class="ax_default _文本段落 transition notrs">
+        <div id="u5036_div" class=""></div>
+        <div id="u5036_text" class="text ">
+          <p><span>**Rules Explanation:**</span></p><p><span>1. Hit condition: Valid pot ≥10BB (6+ equals 10 Ante) with flop participation;</span></p><p><span>2. Participation rate must not be significantly below the player average;</span></p><p><span>3. When the valid pot reaches 10BB, a service fee is added to the prize pool.</span></p><p><span><br></span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5037" class="ax_default _二级标题 transition notrs">
+        <div id="u5037_div" class=""></div>
+        <div id="u5037_text" class="text ">
+          <p><span>平台后台</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Image) -->
+      <div id="u5038" class="ax_default _图像_ transition notrs">
+        <img id="u5038_img" class="img " src="images/防刷功能/u5038.png"/>
+        <div id="u5038_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5039" class="ax_default label transition notrs">
+        <div id="u5039_div" class=""></div>
+        <div id="u5039_text" class="text ">
+          <p><span>增加项</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5040" class="ax_default box_1 transition notrs">
+        <div id="u5040_div" class=""></div>
+        <div id="u5040_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5041" class="ax_default label transition notrs">
+        <div id="u5041_div" class=""></div>
+        <div id="u5041_text" class="text ">
+          <p><span>LuckyCard奖金发放</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5042" class="ax_default _文本段落 transition notrs">
+        <div id="u5042_div" class=""></div>
+        <div id="u5042_text" class="text ">
+          <p><span>服务费贡献BB数</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5043" class="ax_default box_1 transition notrs">
+        <div id="u5043_div" class=""></div>
+        <div id="u5043_text" class="text " style="display:none; visibility: hidden">
+          <p></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5044" class="ax_default primary_button transition notrs">
+        <div id="u5044_div" class=""></div>
+        <div id="u5044_text" class="text ">
+          <p><span>提交</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5045" class="ax_default _二级标题 transition notrs">
+        <div id="u5045_div" class=""></div>
+        <div id="u5045_text" class="text ">
+          <p><span>超盟后台</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5046" class="ax_default _文本段落 transition notrs">
+        <div id="u5046_div" class=""></div>
+        <div id="u5046_text" class="text ">
+          <p><span>“活动管理” -&gt; &quot;LuckyCard活动记录&quot; 下方增加菜单 “LuckyCard奖励审核”</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Droplist) -->
+      <div id="u5047" class="ax_default droplist transition notrs">
+        <div id="u5047_div" class=""></div>
+        <select id="u5047_input" class="u5047_input">
+          <option class="u5047_input_option" value="所有">所有</option>
+          <option class="u5047_input_option" value="待审核">待审核</option>
+          <option class="u5047_input_option" value="系统补发">系统补发</option>
+          <option class="u5047_input_option" value="审核补发">审核补发</option>
+          <option class="u5047_input_option" value="审核不补发">审核不补发</option>
+        </select>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5048" class="ax_default box_1 transition notrs">
+        <div id="u5048_div" class=""></div>
+        <div id="u5048_text" class="text ">
+          <p><span style="color:#848383;">开始日期</span><span>&nbsp; &nbsp;&nbsp; 至&nbsp; &nbsp;&nbsp; </span><span style="color:#848383;">结束日期</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5049" class="ax_default box_1 transition notrs">
+        <div id="u5049_div" class=""></div>
+        <div id="u5049_text" class="text ">
+          <p><span>输入玩家ID</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Table) -->
+      <div id="u5050" class="ax_default">
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5051" class="ax_default table_cell transition notrs">
+          <svg data="images/抽奖/u1399.svg" id="u5051_img" class="img generatedImage" viewbox="0 0 100 30">
+
+  <path d="M 1 1  L 100 1  L 100 30  L 1 30  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" class="fill" />
+  <path d="M 0.5 1  L 0.5 30  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" class="stroke" />
+          </svg>
+          <div id="u5051_text" class="text ">
+            <p><span>击中时间</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5052" class="ax_default table_cell transition notrs">
+          <svg data="images/抽奖/u1400.svg" id="u5052_img" class="img generatedImage" viewbox="100 0 100 30">
+
+  <path d="M 1 1  L 100 1  L 100 30  L 1 30  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 100 0 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 30  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 100 0 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 100 0 )" class="stroke" />
+          </svg>
+          <div id="u5052_text" class="text ">
+            <p><span>玩家id</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5053" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5053.svg" id="u5053_img" class="img generatedImage" viewbox="200 0 100 30">
+
+  <path d="M 1 1  L 100 1  L 100 30  L 1 30  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 200 0 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 30  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 200 0 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 200 0 )" class="stroke" />
+          </svg>
+          <div id="u5053_text" class="text ">
+            <p><span>玩家昵称</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5054" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5054.svg" id="u5054_img" class="img generatedImage" viewbox="300 0 100 30">
+
+  <path d="M 1 1  L 100 1  L 100 30  L 1 30  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 300 0 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 30  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 300 0 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 300 0 )" class="stroke" />
+          </svg>
+          <div id="u5054_text" class="text ">
+            <p><span>牌局ID</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5055" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5055.svg" id="u5055_img" class="img generatedImage" viewbox="400 0 100 30">
+
+  <path d="M 1 1  L 100 1  L 100 30  L 1 30  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 400 0 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 30  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 400 0 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 400 0 )" class="stroke" />
+          </svg>
+          <div id="u5055_text" class="text ">
+            <p><span>BB</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5056" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5056.svg" id="u5056_img" class="img generatedImage" viewbox="500 0 100 30">
+
+  <path d="M 1 1  L 100 1  L 100 30  L 1 30  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 500 0 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 30  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 500 0 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 500 0 )" class="stroke" />
+          </svg>
+          <div id="u5056_text" class="text ">
+            <p><span>手数ID</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5057" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5057.svg" id="u5057_img" class="img generatedImage" viewbox="600 0 100 30">
+
+  <path d="M 1 1  L 100 1  L 100 30  L 1 30  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 600 0 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 30  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 600 0 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 600 0 )" class="stroke" />
+          </svg>
+          <div id="u5057_text" class="text ">
+            <p><span>当时奖池</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5058" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5058.svg" id="u5058_img" class="img generatedImage" viewbox="700 0 100 30">
+
+  <path d="M 1 1  L 100 1  L 100 30  L 1 30  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 700 0 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 30  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 700 0 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 700 0 )" class="stroke" />
+          </svg>
+          <div id="u5058_text" class="text ">
+            <p><span>击中次数</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5059" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5059.svg" id="u5059_img" class="img generatedImage" viewbox="800 0 213 30">
+
+  <path d="M 1 1  L 213 1  L 213 30  L 1 30  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 800 0 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 30  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 800 0 )" class="stroke" />
+  <path d="M 0 0.5  L 213 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 800 0 )" class="stroke" />
+          </svg>
+          <div id="u5059_text" class="text ">
+            <p><span>状态</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5060" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5060.svg" id="u5060_img" class="img generatedImage" viewbox="1013 0 112 30">
+
+  <path d="M 1 1  L 111 1  L 111 30  L 1 30  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 1013 0 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 30  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 1013 0 )" class="stroke" />
+  <path d="M 0 0.5  L 112 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 1013 0 )" class="stroke" />
+  <path d="M 111.5 1  L 111.5 30  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 1013 0 )" class="stroke" />
+          </svg>
+          <div id="u5060_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5061" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5061.svg" id="u5061_img" class="img generatedImage" viewbox="0 30 100 53">
+
+  <path d="M 1 1  L 100 1  L 100 53  L 1 53  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 0 30 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 53  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 0 30 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 0 30 )" class="stroke" />
+          </svg>
+          <div id="u5061_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5062" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5062.svg" id="u5062_img" class="img generatedImage" viewbox="100 30 100 53">
+
+  <path d="M 1 1  L 100 1  L 100 53  L 1 53  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 100 30 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 53  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 100 30 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 100 30 )" class="stroke" />
+          </svg>
+          <div id="u5062_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5063" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5063.svg" id="u5063_img" class="img generatedImage" viewbox="200 30 100 53">
+
+  <path d="M 1 1  L 100 1  L 100 53  L 1 53  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 200 30 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 53  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 200 30 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 200 30 )" class="stroke" />
+          </svg>
+          <div id="u5063_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5064" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5064.svg" id="u5064_img" class="img generatedImage" viewbox="300 30 100 53">
+
+  <path d="M 1 1  L 100 1  L 100 53  L 1 53  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 300 30 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 53  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 300 30 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 300 30 )" class="stroke" />
+          </svg>
+          <div id="u5064_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5065" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5065.svg" id="u5065_img" class="img generatedImage" viewbox="400 30 100 53">
+
+  <path d="M 1 1  L 100 1  L 100 53  L 1 53  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 400 30 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 53  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 400 30 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 400 30 )" class="stroke" />
+          </svg>
+          <div id="u5065_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5066" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5066.svg" id="u5066_img" class="img generatedImage" viewbox="500 30 100 53">
+
+  <path d="M 1 1  L 100 1  L 100 53  L 1 53  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 500 30 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 53  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 500 30 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 500 30 )" class="stroke" />
+          </svg>
+          <div id="u5066_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5067" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5067.svg" id="u5067_img" class="img generatedImage" viewbox="600 30 100 53">
+
+  <path d="M 1 1  L 100 1  L 100 53  L 1 53  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 600 30 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 53  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 600 30 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 600 30 )" class="stroke" />
+          </svg>
+          <div id="u5067_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5068" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5068.svg" id="u5068_img" class="img generatedImage" viewbox="700 30 100 53">
+
+  <path d="M 1 1  L 100 1  L 100 53  L 1 53  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 700 30 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 53  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 700 30 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 700 30 )" class="stroke" />
+          </svg>
+          <div id="u5068_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5069" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5069.svg" id="u5069_img" class="img generatedImage" viewbox="800 30 213 53">
+
+  <path d="M 1 1  L 213 1  L 213 53  L 1 53  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 800 30 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 53  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 800 30 )" class="stroke" />
+  <path d="M 0 0.5  L 213 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 800 30 )" class="stroke" />
+          </svg>
+          <div id="u5069_text" class="text ">
+            <p><span>系统补发(2025.7.2920:56:00&nbsp; 1000)</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5070" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5070.svg" id="u5070_img" class="img generatedImage" viewbox="1013 30 112 53">
+
+  <path d="M 1 1  L 111 1  L 111 53  L 1 53  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 1013 30 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 53  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 1013 30 )" class="stroke" />
+  <path d="M 0 0.5  L 112 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 1013 30 )" class="stroke" />
+  <path d="M 111.5 1  L 111.5 53  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 1013 30 )" class="stroke" />
+          </svg>
+          <div id="u5070_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5071" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5071.svg" id="u5071_img" class="img generatedImage" viewbox="0 83 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 0 83 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 0 83 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 0 83 )" class="stroke" />
+          </svg>
+          <div id="u5071_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5072" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5072.svg" id="u5072_img" class="img generatedImage" viewbox="100 83 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 100 83 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 100 83 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 100 83 )" class="stroke" />
+          </svg>
+          <div id="u5072_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5073" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5073.svg" id="u5073_img" class="img generatedImage" viewbox="200 83 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 200 83 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 200 83 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 200 83 )" class="stroke" />
+          </svg>
+          <div id="u5073_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5074" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5074.svg" id="u5074_img" class="img generatedImage" viewbox="300 83 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 300 83 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 300 83 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 300 83 )" class="stroke" />
+          </svg>
+          <div id="u5074_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5075" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5075.svg" id="u5075_img" class="img generatedImage" viewbox="400 83 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 400 83 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 400 83 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 400 83 )" class="stroke" />
+          </svg>
+          <div id="u5075_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5076" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5076.svg" id="u5076_img" class="img generatedImage" viewbox="500 83 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 500 83 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 500 83 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 500 83 )" class="stroke" />
+          </svg>
+          <div id="u5076_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5077" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5077.svg" id="u5077_img" class="img generatedImage" viewbox="600 83 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 600 83 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 600 83 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 600 83 )" class="stroke" />
+          </svg>
+          <div id="u5077_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5078" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5078.svg" id="u5078_img" class="img generatedImage" viewbox="700 83 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 700 83 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 700 83 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 700 83 )" class="stroke" />
+          </svg>
+          <div id="u5078_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5079" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5079.svg" id="u5079_img" class="img generatedImage" viewbox="800 83 213 55">
+
+  <path d="M 1 1  L 213 1  L 213 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 800 83 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 800 83 )" class="stroke" />
+  <path d="M 0 0.5  L 213 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 800 83 )" class="stroke" />
+          </svg>
+          <div id="u5079_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5080" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5080.svg" id="u5080_img" class="img generatedImage" viewbox="1013 83 112 55">
+
+  <path d="M 1 1  L 111 1  L 111 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 1013 83 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 1013 83 )" class="stroke" />
+  <path d="M 0 0.5  L 112 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 1013 83 )" class="stroke" />
+  <path d="M 111.5 1  L 111.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 1013 83 )" class="stroke" />
+          </svg>
+          <div id="u5080_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5081" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5081.svg" id="u5081_img" class="img generatedImage" viewbox="0 138 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 0 138 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 0 138 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 0 138 )" class="stroke" />
+          </svg>
+          <div id="u5081_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5082" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5082.svg" id="u5082_img" class="img generatedImage" viewbox="100 138 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 100 138 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 100 138 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 100 138 )" class="stroke" />
+          </svg>
+          <div id="u5082_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5083" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5083.svg" id="u5083_img" class="img generatedImage" viewbox="200 138 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 200 138 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 200 138 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 200 138 )" class="stroke" />
+          </svg>
+          <div id="u5083_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5084" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5084.svg" id="u5084_img" class="img generatedImage" viewbox="300 138 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 300 138 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 300 138 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 300 138 )" class="stroke" />
+          </svg>
+          <div id="u5084_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5085" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5085.svg" id="u5085_img" class="img generatedImage" viewbox="400 138 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 400 138 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 400 138 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 400 138 )" class="stroke" />
+          </svg>
+          <div id="u5085_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5086" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5086.svg" id="u5086_img" class="img generatedImage" viewbox="500 138 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 500 138 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 500 138 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 500 138 )" class="stroke" />
+          </svg>
+          <div id="u5086_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5087" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5087.svg" id="u5087_img" class="img generatedImage" viewbox="600 138 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 600 138 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 600 138 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 600 138 )" class="stroke" />
+          </svg>
+          <div id="u5087_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5088" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5088.svg" id="u5088_img" class="img generatedImage" viewbox="700 138 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 700 138 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 700 138 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 700 138 )" class="stroke" />
+          </svg>
+          <div id="u5088_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5089" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5089.svg" id="u5089_img" class="img generatedImage" viewbox="800 138 213 55">
+
+  <path d="M 1 1  L 213 1  L 213 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 800 138 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 800 138 )" class="stroke" />
+  <path d="M 0 0.5  L 213 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 800 138 )" class="stroke" />
+          </svg>
+          <div id="u5089_text" class="text ">
+            <p><span>审核_不补发</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5090" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5090.svg" id="u5090_img" class="img generatedImage" viewbox="1013 138 112 55">
+
+  <path d="M 1 1  L 111 1  L 111 55  L 1 55  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 1013 138 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 1013 138 )" class="stroke" />
+  <path d="M 0 0.5  L 112 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 1013 138 )" class="stroke" />
+  <path d="M 111.5 1  L 111.5 55  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 1013 138 )" class="stroke" />
+          </svg>
+          <div id="u5090_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5091" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5091.svg" id="u5091_img" class="img generatedImage" viewbox="0 192 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 54  L 1 54  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 0 192 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 54  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 0 192 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 0 192 )" class="stroke" />
+  <path d="M 0 54.5  L 100 54.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 0 192 )" class="stroke" />
+          </svg>
+          <div id="u5091_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5092" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5092.svg" id="u5092_img" class="img generatedImage" viewbox="100 192 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 54  L 1 54  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 100 192 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 54  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 100 192 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 100 192 )" class="stroke" />
+  <path d="M 0 54.5  L 100 54.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 100 192 )" class="stroke" />
+          </svg>
+          <div id="u5092_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5093" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5093.svg" id="u5093_img" class="img generatedImage" viewbox="200 192 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 54  L 1 54  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 200 192 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 54  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 200 192 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 200 192 )" class="stroke" />
+  <path d="M 0 54.5  L 100 54.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 200 192 )" class="stroke" />
+          </svg>
+          <div id="u5093_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5094" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5094.svg" id="u5094_img" class="img generatedImage" viewbox="300 192 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 54  L 1 54  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 300 192 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 54  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 300 192 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 300 192 )" class="stroke" />
+  <path d="M 0 54.5  L 100 54.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 300 192 )" class="stroke" />
+          </svg>
+          <div id="u5094_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5095" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5095.svg" id="u5095_img" class="img generatedImage" viewbox="400 192 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 54  L 1 54  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 400 192 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 54  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 400 192 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 400 192 )" class="stroke" />
+  <path d="M 0 54.5  L 100 54.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 400 192 )" class="stroke" />
+          </svg>
+          <div id="u5095_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5096" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5096.svg" id="u5096_img" class="img generatedImage" viewbox="500 192 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 54  L 1 54  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 500 192 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 54  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 500 192 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 500 192 )" class="stroke" />
+  <path d="M 0 54.5  L 100 54.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 500 192 )" class="stroke" />
+          </svg>
+          <div id="u5096_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5097" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5097.svg" id="u5097_img" class="img generatedImage" viewbox="600 192 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 54  L 1 54  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 600 192 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 54  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 600 192 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 600 192 )" class="stroke" />
+  <path d="M 0 54.5  L 100 54.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 600 192 )" class="stroke" />
+          </svg>
+          <div id="u5097_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5098" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5098.svg" id="u5098_img" class="img generatedImage" viewbox="700 192 100 55">
+
+  <path d="M 1 1  L 100 1  L 100 54  L 1 54  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 700 192 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 54  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 700 192 )" class="stroke" />
+  <path d="M 0 0.5  L 100 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 700 192 )" class="stroke" />
+  <path d="M 0 54.5  L 100 54.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 700 192 )" class="stroke" />
+          </svg>
+          <div id="u5098_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5099" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5099.svg" id="u5099_img" class="img generatedImage" viewbox="800 192 213 55">
+
+  <path d="M 1 1  L 213 1  L 213 54  L 1 54  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 800 192 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 54  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 800 192 )" class="stroke" />
+  <path d="M 0 0.5  L 213 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 800 192 )" class="stroke" />
+  <path d="M 0 54.5  L 213 54.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 800 192 )" class="stroke" />
+          </svg>
+          <div id="u5099_text" class="text ">
+            <p><span>审核补发(2025.7.29 20:56:00&nbsp; 1000)</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (Table cell) -->
+        <div id="u5100" class="ax_default table_cell transition notrs">
+          <svg data="images/防刷功能/u5100.svg" id="u5100_img" class="img generatedImage" viewbox="1013 192 112 55">
+
+  <path d="M 1 1  L 111 1  L 111 54  L 1 54  L 1 1  Z " fill-rule="nonzero" fill="rgba(255, 255, 255, 1)" stroke="none" transform="matrix(1 0 0 1 1013 192 )" class="fill" />
+  <path d="M 0.5 1  L 0.5 54  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 1013 192 )" class="stroke" />
+  <path d="M 0 0.5  L 112 0.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 1013 192 )" class="stroke" />
+  <path d="M 111.5 1  L 111.5 54  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 1013 192 )" class="stroke" />
+  <path d="M 0 54.5  L 112 54.5  " stroke-width="1" stroke-dasharray="0" stroke="rgba(121, 121, 121, 1)" fill="none" transform="matrix(1 0 0 1 1013 192 )" class="stroke" />
+          </svg>
+          <div id="u5100_text" class="text " style="display:none; visibility: hidden">
+            <p></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5101" class="ax_default button transition notrs">
+        <div id="u5101_div" class=""></div>
+        <div id="u5101_text" class="text ">
+          <p><span>数据筛查</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5102" class="ax_default button transition notrs">
+        <div id="u5102_div" class=""></div>
+        <div id="u5102_text" class="text ">
+          <p><span>补发</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5103" class="ax_default button transition notrs">
+        <div id="u5103_div" class=""></div>
+        <div id="u5103_text" class="text ">
+          <p><span>数据筛查</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5104" class="ax_default button transition notrs">
+        <div id="u5104_div" class=""></div>
+        <div id="u5104_text" class="text ">
+          <p><span>不补发</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5105" class="ax_default _文本段落 transition notrs">
+        <div id="u5105_div" class=""></div>
+        <div id="u5105_text" class="text ">
+          <p style="font-size:14px;"><span>状态说明：</span></p><p style="font-size:14px;"><span><br></span></p><p style="font-size:14px;"><span>&nbsp;&nbsp; 1.系统补发：显示 系统补发(补发时间 补发金额)</span></p><p style="font-size:13px;"><span style="font-size:14px;">&nbsp;&nbsp; 2.待审核：显示 “</span><span style="color:#63A103;">审核发放</span><span style="font-size:14px;">” 和 “</span><span style="color:#D9001B;">审核不发放</span><span style="font-size:14px;">” 按钮</span></p><p style="font-size:13px;"><span style="font-size:14px;">&nbsp;&nbsp; 3.已审核_不补发：显示 </span><span style="color:#D9001B;">审核_不补发</span></p><p style="font-size:13px;"><span style="color:#D9001B;">&nbsp;&nbsp; </span><span style="color:#000000;">4.</span><span style="font-size:14px;color:#000000;">已</span><span style="color:#000000;">审核_补发：显示 审核</span><span style="font-size:14px;">补发(补发时间 补发金额)</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5106" class="ax_default button transition notrs">
+        <div id="u5106_div" class=""></div>
+        <div id="u5106_text" class="text ">
+          <p><span>数据筛查</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (Rectangle) -->
+      <div id="u5107" class="ax_default button transition notrs">
+        <div id="u5107_div" class=""></div>
+        <div id="u5107_text" class="text ">
+          <p><span>数据筛查</span></p>
+        </div>
+      </div>
+    </div>
+    <script src="resources/scripts/axure/ios.js"></script>
+  </body>
+</html>
